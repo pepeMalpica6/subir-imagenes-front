@@ -1,20 +1,25 @@
-<div class="container">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h1>Subir imagen</h1>
-		</div>
-		<div class="panel-body">
-			<form action="">
-				<div>
-					<label for="nombre">Nombre: </label>
-					<input type="text" name="nombre" id="nombre">
-					<label for="apellido">Apellido: </label>
-					<input type="text" name="apellido" id="apellido">
-				</div>
-				<div>
-					<button type="submit" class="btn btn-success" >Enviar</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<nav class="navbar navbar-inverse bg-faded">
+	<a href="#" class="navbar-brand">Image Uploader</a>
+	<ul class="nav navbar-nav">
+		<li class="nav-item active">
+			<a href="#" class="nav-link" routerLink="/home" 
+			routerLinkActive="active" > Home </a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link" routerLink="/registrar"
+			routerLinkActive="active"> Registrar usuarios </a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link" routerLink="/registrados"
+			routerLinkActive="active"> Usuarios registrados </a>
+		</li>
+	</ul>
+</nav>
+
+<router-outlet>
+	
+</router-outlet>
